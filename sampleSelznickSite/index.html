@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- This example uses an HTTP request to pass the XML file to a parser; to get this to work you need to cd to this directory and 
+run python -m SimpleHTTPServer from your terminal -->
+<html>
+<head>
+    <title>Video Embedding Exercise</title><!--Where your page's title will go-->
+    <link rel="stylesheet" type="text/css" href="style.css"></script><!--Relative Path to Stylehseet-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://popcornjs.org/code/dist/popcorn-complete.js"></script> 
+</head>
+<script type="text/javascript" src="sampleScript.js"></script><!--External Script for the Button function-->
+<body>
+    <div class="videoWrapper"><!--The wrapper for the video content-->
+	<div id="myVideoNote"></div>
+        <h2>Joy Commercials</h2><!--The title of your video-->
+            <div id="description">
+            <h4><strong>Description:</strong></h4>
+            <p>
+		Some questionable Joy commercials from the early 1960s.<br /><br />
+		<i>Tag line: You come back to House of Joy very soon, nice lady.</i>
+            </p><!--The Description of your video-->
+            </div>
+        <video src="joyClip.mp4" type="video/mp4" id="myVideo" width="800px" height="450px" controls></video><br><!--Video Player dimensions with controls-->
+        <a href="#"><span id="toggleMetadata">Show Technical Metadata</span></a>
+            <div id="hiddenDiv"><!--XML is parsed and put in here -->
+
+	    </div>
+    </div>
+</body>
+</html>

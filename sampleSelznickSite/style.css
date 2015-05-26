@@ -1,0 +1,88 @@
+/*CSS Styles for Our Sample Site*/
+
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
+
+/*--Universal CSS Properties (acting on elements rather than IDs or Classes--*/
+html {
+    font-family: 'Bitter', Helvetica, sans-serif;
+}
+
+video {
+    background: #293035;
+    border-radius: 4px;
+    left: -180px;
+    top: -140px;
+    position: relative;
+}
+
+h2 {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--CSS properties for IDs and Classes we've made--*/
+.videoWrapper {
+    position: relative;
+    //background: #696E72;
+    width: 800px;
+    padding-left: 200px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#description {
+    //background-color: #CCCCCC;
+    //border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    top: 20px;
+    width: 300px;
+    left: 650px;
+    height: auto;
+}
+
+#toggleMetadata {
+    position: relative;
+    top: -400px;
+    left: 700px;
+    color: #000;
+    text-decoration: none;
+}
+
+#toggleMetadata:hover {
+    color: #ccc;
+}
+
+#hiddenDiv {
+    position: relative;
+    top: -400px;
+    left: 700px;
+    //background: #293035;
+    padding: 0px 0px 0px 10px;
+    //border-radius: 5px;
+    color: #000;
+    display: none;
+    border-left: 2px dotted #ccc;
+    
+}
+
+.videoWrapper h2 {
+	position: relative;
+	left: -175px;
+	border-bottom: 2px dotted #ccc;
+	padding: 0px 100px 10px 0px;
+}
+
+#myVideoNote {
+	z-index: 2000;
+	position: absolute;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	font-size: 18px;
+	top: 175px;
+	left: 30px;
+}
